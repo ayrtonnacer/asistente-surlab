@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import ChatInterface from "@/components/ChatInterface";
 import InfoCards from "@/components/InfoCards";
 
 const Index = () => {
@@ -7,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <HeroSection />
+        <ChatInterface />
         <InfoCards />
       </main>
     </div>
