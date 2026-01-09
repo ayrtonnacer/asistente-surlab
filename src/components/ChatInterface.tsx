@@ -64,11 +64,19 @@ const ChatInterface = () => {
       let textBuffer = "";
       let assistantContent = "";
 
-      setMessages(prev => [...prev, { role: "assistant", content: "" }]);
+      // Add empty assistant message
+      setMessages(prev => {
+        const updated = [...prev, { role: "assistant" as const, content: "" }];
+        console.log("Added empty assistant message, total:", updated.length);
+        return updated;
+      });
 
       while (true) {
         const { done, value } = await reader.read();
-        if (done) break;
+        if (done) {
+          console.log("Stream done. Final content:", assistantContent);
+          break;
+        }
         
         textBuffer += decoder.decode(value, { stream: true });
 
@@ -82,7 +90,10 @@ const ChatInterface = () => {
           if (!line.startsWith("data: ")) continue;
 
           const jsonStr = line.slice(6).trim();
-          if (jsonStr === "[DONE]") break;
+          if (jsonStr === "[DONE]") {
+            console.log("Received [DONE] signal");
+            break;
+          }
 
           try {
             const parsed = JSON.parse(jsonStr);
