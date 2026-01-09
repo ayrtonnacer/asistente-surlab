@@ -25,6 +25,9 @@ const ChatInterface = () => {
   }, [messages]);
 
   const streamChat = async (userMessage: string) => {
+    console.log("streamChat called with:", userMessage);
+    console.log("CHAT_URL:", CHAT_URL);
+    
     const userMsg: Message = { role: "user", content: userMessage };
     const newMessages = [...messages, userMsg];
     setMessages(newMessages);
@@ -32,6 +35,7 @@ const ChatInterface = () => {
     setInput("");
 
     try {
+      console.log("Sending request to chat function...");
       const response = await fetch(CHAT_URL, {
         method: "POST",
         headers: {
@@ -40,6 +44,8 @@ const ChatInterface = () => {
         },
         body: JSON.stringify({ messages: newMessages }),
       });
+      
+      console.log("Response status:", response.status);
 
       if (!response.ok || !response.body) {
         throw new Error("Error al conectar con SAM");
