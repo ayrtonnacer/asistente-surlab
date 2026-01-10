@@ -1,6 +1,5 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
+"name": "docu-guide-buddy",  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
