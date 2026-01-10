@@ -246,7 +246,7 @@ const ChatInterface = () => {
               <button
                 type="submit"
                 disabled={isLoading || !input.trim()}
-                className="m-2 p-4 bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="m-1 sm:m-2 p-2 sm:p-4 bg-primary hover:bg-primary/90 rounded-xl text-primary-foreground transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {isLoading ? (
                   <Loader2 className="w-5 h-5 animate-spin" />
