@@ -5,8 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-    base: '/skall-bot-demo/',
-  server: {
+base: '/docu-guide-buddy/',  server: {
     host: "::",
     port: 8080,
   },
