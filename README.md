@@ -1,7 +1,5 @@
-# Docu Guide Buddy
-
-An AI-powered documentation guide and assistant.
-
+# Skall Bot Demo
+Advanced AI-powered chatbot and demo application.
 ## Getting Started
 
 This project is built with React, TypeScript, Vite, and Tailwind CSS.
