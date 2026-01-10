@@ -15,8 +15,8 @@ This project is built with React, TypeScript, Vite, and Tailwind CSS.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ayrtonnacer/docu-guide-buddy.git
-cd docu-guide-buddy
+git clone https://github.com/ayrtonnacer/skall-bot-demo.git
+cd skall-bot-demo
 ```
 
 2. Install dependencies:
@@ -49,7 +49,7 @@ npm run build
 
 This project is deployed to GitHub Pages. Any push to the main branch will automatically build and deploy the application.
 
-**Live Demo:** https://ayrtonnacer.github.io/docu-guide-buddy/
+**Live Demo:** https://ayrtonnacer.github.io/skall-bot-demo/
 
 ## License
 
