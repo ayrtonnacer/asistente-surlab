@@ -6,79 +6,88 @@
 
 @layer base {
   :root {
-    --background: 160 50% 6%;
+    --background: 213 100% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 160 30% 10%;
+    --card: 210 60% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 160 30% 8%;
+    --popover: 210 60% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 165 100% 42%;
-    --primary-foreground: 160 50% 6%;
+    --primary: 196 75% 60%;
+    --primary-foreground: 213 100% 8%;
 
-    --secondary: 160 20% 15%;
+    --secondary: 210 40% 16%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 160 15% 20%;
-    --muted-foreground: 160 10% 60%;
+    --muted: 210 30% 20%;
+    --muted-foreground: 210 20% 60%;
 
-    --accent: 165 100% 42%;
-    --accent-foreground: 160 50% 6%;
+    --accent: 196 75% 60%;
+    --accent-foreground: 213 100% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 160 20% 18%;
-    --input: 160 20% 12%;
-    --ring: 165 100% 42%;
+    --border: 210 30% 18%;
+    --input: 210 30% 12%;
+    --ring: 196 75% 60%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-radial: radial-gradient(ellipse at center, hsl(160 30% 12%) 0%, hsl(160 50% 6%) 70%);
-    --gradient-dots: radial-gradient(circle, hsl(165 100% 42% / 0.3) 1px, transparent 1px);
-    --glow-primary: 0 0 40px hsl(165 100% 42% / 0.3);
+    --gradient-radial: radial-gradient(ellipse at center, hsl(210 60% 12%) 0%, hsl(213 100% 8%) 70%);
+    --gradient-dots: radial-gradient(circle, hsl(196 75% 60% / 0.3) 1px, transparent 1px);
+    --glow-primary: 0 0 40px hsl(196 75% 60% / 0.3);
 
-    --sidebar-background: 160 30% 8%;
+    --sidebar-background: 210 60% 10%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 165 100% 42%;
-    --sidebar-primary-foreground: 160 50% 6%;
-    --sidebar-accent: 160 20% 15%;
+    --sidebar-primary: 196 75% 60%;
+    --sidebar-primary-foreground: 213 100% 8%;
+    --sidebar-accent: 210 40% 16%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 160 20% 18%;
-    --sidebar-ring: 165 100% 42%;
+    --sidebar-border: 210 30% 18%;
+    --sidebar-ring: 196 75% 60%;
   }
 
   .dark {
-    --background: 160 50% 6%;
+    --background: 213 100% 8%;
     --foreground: 0 0% 98%;
-    --card: 160 30% 10%;
+
+    --card: 210 60% 12%;
     --card-foreground: 0 0% 98%;
-    --popover: 160 30% 8%;
+
+    --popover: 210 60% 10%;
     --popover-foreground: 0 0% 98%;
-    --primary: 165 100% 42%;
-    --primary-foreground: 160 50% 6%;
-    --secondary: 160 20% 15%;
+
+    --primary: 196 75% 60%;
+    --primary-foreground: 213 100% 8%;
+
+    --secondary: 210 40% 16%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 160 15% 20%;
-    --muted-foreground: 160 10% 60%;
-    --accent: 165 100% 42%;
-    --accent-foreground: 160 50% 6%;
+
+    --muted: 210 30% 20%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 196 75% 60%;
+    --accent-foreground: 213 100% 8%;
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 160 20% 18%;
-    --input: 160 20% 12%;
-    --ring: 165 100% 42%;
-    --sidebar-background: 160 30% 8%;
+
+    --border: 210 30% 18%;
+    --input: 210 30% 12%;
+    --ring: 196 75% 60%;
+
+    --sidebar-background: 210 60% 10%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 165 100% 42%;
-    --sidebar-primary-foreground: 160 50% 6%;
-    --sidebar-accent: 160 20% 15%;
+    --sidebar-primary: 196 75% 60%;
+    --sidebar-primary-foreground: 213 100% 8%;
+    --sidebar-accent: 210 40% 16%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 160 20% 18%;
-    --sidebar-ring: 165 100% 42%;
+    --sidebar-border: 210 30% 18%;
+    --sidebar-ring: 196 75% 60%;
   }
 }
 
@@ -86,7 +95,6 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
@@ -119,12 +127,8 @@
   }
 
   @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 
   .animate-pulse-slow {
@@ -132,11 +136,7 @@
   }
 
   @keyframes pulse-slow {
-    0%, 100% {
-      opacity: 0.4;
-    }
-    50% {
-      opacity: 0.8;
-    }
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
   }
 }
