@@ -226,7 +226,7 @@ const ChatInterface = () => {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Consultá al asistente de SurLab..."
+              placeholder="Consultá a SurLab Bot..."
               disabled={isLoading}
               className="flex-1 bg-transparent px-6 py-5 text-foreground placeholder:text-muted-foreground focus:outline-none text-base disabled:opacity-50"
             />

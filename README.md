@@ -1,4 +1,4 @@
-# Skall Bot Demo
+# SurLab Bot
 Advanced AI-powered chatbot and demo application.
 ## Getting Started
 

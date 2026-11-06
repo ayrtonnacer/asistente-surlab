@@ -22,7 +22,7 @@ const Header = () => {
               <span className="text-primary font-bold text-lg">S</span>
             </div>
             <span className="text-foreground font-semibold text-xl tracking-tight">
-              SurLab
+              SurLab Bot
             </span>
           </div>
 
